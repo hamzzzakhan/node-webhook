@@ -35,6 +35,7 @@ app.get("/", function (req, res) {
   );
 
   res.send("<pre>" + JSON.stringify(received_updates, null, 2) + "</pre>");
+  console.log("getting lead....");
 });
 
 app.get(["/facebook", "/instagram"], function (req, res) {
